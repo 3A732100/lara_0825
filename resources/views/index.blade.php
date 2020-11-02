@@ -28,7 +28,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
-          <a href="post.blade.php">
+          <a href="{{route('post.index')}}"post.blade.php>
             <h2 class="post-title">
               Man must explore, and this is exploration at its greatest
             </h2>
@@ -37,18 +37,18 @@
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
+            <a href="{{route('posts.index')}}">Start Bootstrap</a>
             on September 24, 2019</p>
         </div>
         <hr>
         <div class="post-preview">
-          <a href="post.blade.php">
+            <a href="{{route('post.index')}}"post.blade.php>
             <h2 class="post-title">
               I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
             </h2>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
+              <a href="{{route('posts.index')}}">Start Bootstrap</a>
             on September 18, 2019</p>
         </div>
         <hr>
@@ -62,7 +62,7 @@
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
+              <a href="{{route('posts.index')}}">Start Bootstrap</a>
             on August 24, 2019</p>
         </div>
         <hr>
@@ -76,7 +76,7 @@
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
+              <a href="{{route('posts.index')}}">Start Bootstrap</a>
             on July 8, 2019</p>
         </div>
         <hr>
