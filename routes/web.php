@@ -20,6 +20,7 @@ Route::get('/', function () { return view('welcome');});
 //index
 Route::get('index',[PostsController::class,'index'])->name('home.index');
 
-//
+//show
+Route::get('post',[PostsController::class,'post'])->name('post.index');
 
 
