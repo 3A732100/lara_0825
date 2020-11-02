@@ -1,8 +1,11 @@
 
 
 @extends('layouts.master')
+
 @section('title', 'Clean Blog - Sample Pos')
 
+
+@section('content')
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/post-bg.jpg')">
     <div class="overlay"></div>
@@ -21,8 +24,7 @@
     </div>
   </header>
 
-@section('content')
-@endsection
+
 
   <!-- Post Content -->
   <article>
@@ -70,17 +72,4 @@
     </div>
   </article>
 
-  <hr>
-
-  <!-- Footer -->
-
-
-  <!-- Bootstrap core JavaScript -->
-
-
-  <!-- Custom scripts for this template -->
-
-
-</body>
-
-</html>
+@endsection
