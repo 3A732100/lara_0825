@@ -21,6 +21,11 @@ class PostsController extends Controller
         return view('post');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
 
     /**
      * Show the form for creating a new resource.

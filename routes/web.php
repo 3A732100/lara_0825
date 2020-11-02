@@ -23,4 +23,7 @@ Route::get('index',[PostsController::class,'index'])->name('home.index');
 //show
 Route::get('post',[PostsController::class,'post'])->name('post.index');
 
+//about
+Route::get('about',[PostsController::class,'about'])->name('about.index');
+
 
