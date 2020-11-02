@@ -11,7 +11,7 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function posts()
     {
         return view('index');
     }
@@ -24,6 +24,10 @@ class PostsController extends Controller
     public function about()
     {
         return view('about');
+    }
+    public function contact()
+    {
+        return view('contact');
     }
 
 

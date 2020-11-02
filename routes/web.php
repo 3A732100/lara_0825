@@ -17,8 +17,8 @@ use App\Http\Controllers\PostsController;
 Route::get('/', function () { return view('welcome');});
 
 
-//index
-Route::get('index',[PostsController::class,'index'])->name('home.index');
+//posts
+Route::get('posts',[PostsController::class,'posts'])->name('posts.index');
 
 //show
 Route::get('post',[PostsController::class,'post'])->name('post.index');
@@ -26,4 +26,6 @@ Route::get('post',[PostsController::class,'post'])->name('post.index');
 //about
 Route::get('about',[PostsController::class,'about'])->name('about.index');
 
+//contact
+Route::get('contact',[PostsController::class,'contact'])->name('contact.index');
 
