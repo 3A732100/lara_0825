@@ -22,8 +22,8 @@ Route::get('/', function () { //return view('welcome');
     //$post->save();
 
     Post::create([
-        'title'=>'testtitle',
-        'content'=>'testcontent',
+        'title'=>'test title',
+        'content'=>'test content',
     ]);
 
 
