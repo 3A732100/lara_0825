@@ -53,7 +53,11 @@ Route::get('/', function () { //return view('welcome');
     //$post->delete();
 
     //destroy
-    Post::destroy(2);
+    //Post::destroy(2);
+
+
+    //destroy multi
+    Post::destroy(3,5,7);
 
 
 
