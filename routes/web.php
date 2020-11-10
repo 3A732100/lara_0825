@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,13 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', function () { return view('welcome');});
+Route::get('/', function () { //return view('welcome');
+    $post = new Post();
+    $post->title ='test title';
+    $post->content ='test content';
+    $post->save();
+
+});
 
 
 //posts
