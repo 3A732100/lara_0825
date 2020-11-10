@@ -26,6 +26,14 @@ Route::get('/', function () { //return view('welcome');
         'content'=>'test content',
     ]);
 
+    $posts = Post::all();
+    dd($posts);
+
+    $post = Post::find(1);
+    dd($post);
+
+    $posts = Post::where('id','<',10)->orderBy('id','DESC')->get();
+    dd($posts);
 
 });
 
