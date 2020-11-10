@@ -48,9 +48,12 @@ Route::get('/', function () { //return view('welcome');
     //$post->content='saved content';
     //$post->save();
 
-    $post = Post::find(1);
-    $post->delete();
+    //delete
+    //$post = Post::find(1);
+    //$post->delete();
 
+    //destroy
+    Post::destroy(2);
 
 
 
