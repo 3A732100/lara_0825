@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
 use App\Models\Post;
+use App\Models\Comment;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,9 +70,13 @@ Route::get('/', function () { //return view('welcome');
     //$fourthPost=Post::find(4);
     //dd($fourthPost);
 
-    $lastPost=Post::orderBy('id','DESC')->first();
-    dd($lastPost);
+    //$lastPost=Post::orderBy('id','DESC')->first();
+    //dd($lastPost);
 
+    $post= Post::find(4);
+    foreach($post->comments as $comment){
+        echo $comment->content.'<br>';
+    }
 
 
 });
@@ -88,4 +93,6 @@ Route::get('about',[PostsController::class,'about'])->name('about.index');
 
 //contact
 Route::get('contact',[PostsController::class,'contact'])->name('contact.index');
+
+
 
